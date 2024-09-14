@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import { ExternalLink, Github } from 'lucide-react'
+import CurrencyProject from '../../assets/CurrencyMain.png';
+import PortfolioProject from '../../assets/PortfolioProject.png';
 
 export default function Projects() {
   return (
@@ -18,7 +20,7 @@ export default function Projects() {
               <div key={project.title} className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8`}>
                 <div className="w-full md:w-1/2">
                   <Image
-                    src={project.image}
+                    src={project.title === "Currency Tracker and Converter App" ? CurrencyProject : PortfolioProject}
                     alt={project.title}
                     width={600}
                     height={400}
@@ -59,25 +61,25 @@ export default function Projects() {
 }
 
 const projects = [
+  // {
+  //   title: 'E-commerce Platform',
+  //   description: 'A full-stack e-commerce solution built with Java Spring Boot, React, and PostgreSQL.',
+  //   image: "/assets/CurrencyMain.png",
+  //   liveLink: 'https://example.com',
+  //   githubLink: 'https://github.com',
+  // },
   {
-    title: 'E-commerce Platform',
-    description: 'A full-stack e-commerce solution built with Java Spring Boot, React, and PostgreSQL.',
-    image: '/placeholder.svg?height=400&width=600',
-    liveLink: 'https://example.com',
-    githubLink: 'https://github.com',
-  },
-  {
-    title: 'Task Management App',
-    description: 'A React Native mobile app for task management with a Node.js backend and MongoDB.',
-    image: '/placeholder.svg?height=400&width=600',
-    liveLink: 'https://example.com',
-    githubLink: 'https://github.com',
+    title: 'Currency Tracker and Converter App',
+    description: 'A React Native + Web app for tracking currencies and convert them',
+    image: "/assets/CurrencyMain.png",
+    liveLink: 'https://github.com/xsaahil',
+    githubLink: 'https://github.com/xsaahil/curreny-tracker-converter',
   },
   {
     title: 'Portfolio Website',
     description: 'A responsive portfolio website built with Next.js and Tailwind CSS.',
     image: '/placeholder.svg?height=400&width=600',
-    liveLink: 'https://example.com',
-    githubLink: 'https://github.com',
+    liveLink: 'https://sahilcodes.netlify.app/',
+    githubLink: 'https://github.com/xsaahil',
   },
 ]

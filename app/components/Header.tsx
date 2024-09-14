@@ -19,7 +19,7 @@ export default function Header() {
           <nav className="hidden md:flex space-x-8 items-center">
             <NavLink href="#about">About</NavLink>
             <NavLink href="#skills">Skills</NavLink>
-            {/* <NavLink href="#projects">Projects</NavLink> */}
+            <NavLink href="#projects">Projects</NavLink>
             <NavLink href="#contact">Contact</NavLink>
           </nav>
           <div className="md:hidden flex items-center">

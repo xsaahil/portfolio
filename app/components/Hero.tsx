@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { useEffect } from 'react'
 
-import Profile from "../../assets/Sahil.jpg"
 export default function Hero() {
   useEffect(() => {
     const handleSmoothScroll = (e: MouseEvent) => {
@@ -28,16 +27,16 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="bg-gray-50 dark:bg-gray-800">
+    <div className="bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
               <span className="inline">Hi, I'm </span>
-              <span className="inline text-indigo-600 dark:text-indigo-400">Sahil</span>
+              <span className="inline text-indigo-600 dark:text-indigo-400">Sahil S</span>
             </h1>
             <p className="mt-3 text-base text-gray-500 dark:text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Full Stack Java, React and React Native Developer
+              Full Stack Java, React, and React Native Developer
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-start">
               <div className="rounded-md shadow">
@@ -53,7 +52,7 @@ export default function Hero() {
           </div>
           <div className="flex justify-center">
             <Image
-              src={Profile}
+              src="/placeholder.svg?height=400&width=400"
               alt="Sahil S"
               width={400}
               height={400}
@@ -62,6 +61,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
