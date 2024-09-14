@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { useEffect } from 'react'
+import Sahil from '../../assets/Sahil.jpg'
 
 export default function Hero() {
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function Hero() {
           <div>
             <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
               <span className="inline">Hi, I'm </span>
-              <span className="inline text-indigo-600 dark:text-indigo-400">Sahil S</span>
+              <span className="inline text-indigo-600 dark:text-indigo-400">Sahil</span>
             </h1>
             <p className="mt-3 text-base text-gray-500 dark:text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               Full Stack Java, React, and React Native Developer
@@ -52,7 +53,7 @@ export default function Hero() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/placeholder.svg?height=400&width=400"
+              src={Sahil}
               alt="Sahil S"
               width={400}
               height={400}
